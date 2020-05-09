@@ -80,8 +80,10 @@ class TestExcel:
             # 如果文件中的体重与它对应算出来的健康体重相等，则给第四列单元格赋值他的姓名，并标注“是健康体重”
             if weight == health_weight:
                 load_sheet.cell(row=i+2, column=4).value = name+"是健康体重"
-                # 打印出姓名
-                print(name,"是健康体重")
+                # 打印出姓名，用逗号分隔，逗号会打印出空格
+                print(name, "是健康体重")
+                # 打印出姓名，用{}占位符和format打印，就没有空格了
+                # print("{}是健康体重".format(name))
 
         # save()保存文件
         load_excel.save(self.file_name)
