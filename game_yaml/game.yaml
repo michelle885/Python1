@@ -1,0 +1,15 @@
+Tonglao:
+  hp: 1000
+  power: 200
+  skill: 2
+Liqiushui:
+  hp: 1500
+  power: 80
+  skill: 2
+Dingchunqiu:
+  hp: 1200
+  power: 70
+  skill: 2
+default:
+  - Tonglao
+  - Liqiushui
